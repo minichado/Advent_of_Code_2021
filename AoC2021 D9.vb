@@ -20,7 +20,7 @@ For i = R1 + 1 To R1 + 100
 Next i
 
 'run tests now on test matrix
-For k = 1 To 20
+For k = 1 To 20 '20 is arbitrary, I saw the regions stop growing between 10-15 cycles. watched output visually during runs
     For i = R1 + 1 To R1 + 100
         For j = C2 + 2 To C2 + 101
             test = Cells(i, j).Value
